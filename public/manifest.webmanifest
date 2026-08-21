@@ -1,0 +1,12 @@
+{
+  "name": "科研工作台",
+  "short_name": "科研工作台",
+  "description": "任务、日历、实验室台账、发票、习惯与文献收藏",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f3f8ef",
+  "theme_color": "#367b41",
+  "icons": [
+    { "src": "./pets/mimi-happy.jpg", "sizes": "512x512", "type": "image/jpeg", "purpose": "any maskable" }
+  ]
+}

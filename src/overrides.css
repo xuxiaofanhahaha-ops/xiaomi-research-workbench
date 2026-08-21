@@ -1,0 +1,28 @@
+* { box-sizing: border-box; }
+html, body, #root { min-height: 100%; margin: 0; }
+body { background: #f3f8ef; }
+button { cursor: pointer; }
+a { color: inherit; text-decoration: none; }
+.sync { border: 0; }
+.thumb {
+  display: grid;
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  place-items: center;
+  border: 0;
+  border-radius: 10px;
+  background: #edf6ea;
+  font-size: 22px;
+}
+.fileLink { min-width: 0; padding: 0; border: 0; background: transparent; text-align: left; }
+.fileLink strong, .fileLink small { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.fileLink small { color: #829188; font-size: 11px; }
+.settingsCard { display: grid; gap: 9px; }
+.settingsCard p, .syncModal p { margin: 0; color: #71857a; font-size: 12px; line-height: 1.55; }
+.settingsCard > button { min-height: 42px; border: 0; border-radius: 9px; color: #fff; background: #4c9a52; font-weight: 700; }
+.settingsCard > button.secondary { color: #367b41; border: 1px solid #bdd9b7; background: #fff; }
+.syncModal { max-height: 88dvh; overflow: auto; }
+.syncModal .generate { justify-self: start; color: #367b41; border-color: #bdd9b7; background: #f2f9ef; }
+.syncModal input { font-size: 13px; }
+.syncModal > div { position: sticky; bottom: -20px; padding-top: 10px; background: #fff; }
