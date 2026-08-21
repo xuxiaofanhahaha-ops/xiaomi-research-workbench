@@ -29,17 +29,15 @@ jobs:
         with:
           node-version: 22
           cache: pnpm
-          cache-dependency-path: github-pages-mobile/pnpm-lock.yaml
+          cache-dependency-path: pnpm-lock.yaml
       - run: pnpm install --frozen-lockfile
-        working-directory: github-pages-mobile
       - run: pnpm run build
-        working-directory: github-pages-mobile
       - uses: actions/configure-pages@v5
         with:
           enablement: true
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: github-pages-mobile/dist
+          path: dist
       - name: 发布
         uses: actions/deploy-pages@v4
         id: deployment
