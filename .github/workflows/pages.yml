@@ -17,6 +17,9 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
       - uses: pnpm/action-setup@v4
@@ -40,7 +43,3 @@ jobs:
       - name: 发布
         uses: actions/deploy-pages@v4
         id: deployment
-
-environment:
-  name: github-pages
-  url: ${{ steps.deployment.outputs.page_url }}
