@@ -26,3 +26,72 @@ a { color: inherit; text-decoration: none; }
 .syncModal .generate { justify-self: start; color: #367b41; border-color: #bdd9b7; background: #f2f9ef; }
 .syncModal input { font-size: 13px; }
 .syncModal > div { position: sticky; bottom: -20px; padding-top: 10px; background: #fff; }
+
+.calendarToolbar { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 12px; border: 1px solid #d5e6d0; border-radius: 14px; background: #fff; }
+.calendarToolbar > div { display: flex; align-items: center; gap: 6px; }
+.calendarToolbar button { min-width: 36px; height: 36px; padding: 0 10px; border: 1px solid #cfe0ca; border-radius: 9px; color: #367b41; background: #f8fcf7; font-weight: 700; }
+.calendarToolbar > div button { padding: 0; font-size: 24px; line-height: 1; }
+.calendarToolbar strong { min-width: 112px; text-align: center; }
+.reminderButton { display: grid; width: 100%; grid-template-columns: 36px 1fr; gap: 9px; align-items: center; margin-top: 10px; padding: 11px 13px; border: 1px solid #d5e6d0; border-radius: 13px; color: #63796d; background: #fff; text-align: left; }
+.reminderButton.on { border-color: #a9d0a1; background: #f1f9ee; }
+.reminderButton span { font-size: 22px; }
+.reminderButton strong, .reminderButton small { display: block; }
+.reminderButton strong { color: #263b31; font-size: 14px; }
+.reminderButton small { margin-top: 2px; color: #819087; font-size: 11px; }
+.mobileMonth { margin-top: 10px; overflow: hidden; border: 1px solid #d5e6d0; border-radius: 14px; background: #fff; }
+.mobileWeekdays, .mobileMonthGrid { display: grid; grid-template-columns: repeat(7, 1fr); }
+.mobileWeekdays { padding: 8px 4px; color: #71857a; background: #f7fbf5; text-align: center; }
+.mobileWeekdays span { font-size: 10px; font-weight: 700; }
+.mobileMonthGrid button { position: relative; display: grid; min-width: 0; height: 46px; place-items: center; border: 0; border-top: 1px solid #edf2eb; border-right: 1px solid #edf2eb; color: #2e4137; background: #fff; }
+.mobileMonthGrid button:nth-child(7n) { border-right: 0; }
+.mobileMonthGrid button.outside { color: #b0bbb4; background: #fbfcfb; }
+.mobileMonthGrid button.selected { z-index: 1; box-shadow: inset 0 0 0 2px #4c9a52; background: #eff8eb; }
+.mobileMonthGrid button.today b { display: grid; width: 25px; height: 25px; place-items: center; border-radius: 50%; color: #fff; background: #4c9a52; }
+.mobileMonthGrid b { font-size: 12px; }
+.mobileMonthGrid i { position: absolute; right: 3px; bottom: 2px; display: grid; min-width: 14px; height: 14px; padding: 0 3px; place-items: center; border-radius: 99px; color: #397b43; background: #dff0da; font-size: 8px; font-style: normal; }
+.dayListHead, .ledgerTitle { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.dayListHead h2, .ledgerTitle h2 { margin: 0; }
+.dayListHead button { min-height: 34px; padding: 0 10px; border: 1px solid #b9d6b2; border-radius: 8px; color: #367b41; background: #f4faf2; font-weight: 700; }
+
+.freezerSegments { display: grid; grid-template-columns: repeat(3, 1fr); gap: 7px; margin-bottom: 9px; }
+.freezerSegments button { min-height: 39px; border: 1px solid #cfe0ca; border-radius: 10px; color: #60756a; background: #fff; font-weight: 700; }
+.freezerSegments button.active { color: #fff; border-color: #4c9a52; background: #4c9a52; }
+.inventorySearch { display: flex; height: 42px; align-items: center; gap: 7px; margin-bottom: 9px; padding: 0 11px; border: 1px solid #cfe0ca; border-radius: 10px; background: #fff; }
+.inventorySearch input { width: 100%; border: 0; outline: 0; background: transparent; }
+.dateField { display: flex; min-height: 42px; align-items: center; gap: 8px; padding: 0 11px; border: 1px solid #cfe0ca; border-radius: 9px; color: #71857a; font-size: 12px; }
+.dateField input { flex: 1; border: 0; background: transparent; }
+.ledgerTitle { margin-bottom: 2px; }
+.ledgerTitle b { display: grid; min-width: 27px; height: 27px; place-items: center; border-radius: 99px; color: #367b41; background: #e8f5e5; font-size: 12px; }
+.ledger article > div { min-width: 0; }
+.statusPill { display: inline-flex !important; width: auto !important; min-height: 26px; margin-top: 4px; padding: 0 8px !important; align-items: center; border: 0 !important; border-radius: 99px; color: #367b41; background: #e9f5e6 !important; font-size: 10px !important; }
+
+.habitHero { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 15px; border: 1px solid #cde2c7; border-radius: 15px; background: linear-gradient(120deg, #f1faed, #fff); }
+.habitHero > div { display: flex; min-width: 0; align-items: center; gap: 10px; }
+.habitHero > div > span { display: grid; width: 42px; height: 42px; flex: 0 0 auto; place-items: center; border-radius: 12px; background: #dff0da; font-size: 23px; }
+.habitHero strong, .habitHero small { display: block; }
+.habitHero strong { font-size: 15px; }
+.habitHero small { margin-top: 2px; color: #71857a; font-size: 10px; }
+.habitHero > b { color: #4c9a52; font-size: 22px; white-space: nowrap; }
+.habitForm { display: grid; gap: 8px; margin-top: 10px; padding: 13px; border: 1px solid #d5e6d0; border-radius: 14px; background: #fff; }
+.habitForm > input, .habitForm select, .habitForm label { height: 42px; border: 1px solid #cfe0ca; border-radius: 9px; background: #fbfdfb; }
+.habitForm > input, .habitForm select { padding: 0 10px; }
+.habitForm > div { display: grid; grid-template-columns: .8fr 1fr auto; gap: 7px; }
+.habitForm label { display: flex; align-items: center; gap: 4px; padding: 0 8px; color: #71857a; font-size: 11px; }
+.habitForm label input { width: 42px; min-width: 0; margin-left: auto; border: 0; outline: 0; background: transparent; text-align: center; }
+.habitForm button { min-height: 42px; padding: 0 11px; border: 0; border-radius: 9px; color: #fff; background: #4c9a52; font-weight: 700; }
+.habitGrid { display: grid; gap: 10px; margin-top: 10px; }
+.habitCard { padding: 14px; border: 1px solid #d5e6d0; border-radius: 14px; background: #fff; }
+.habitCard.achieved { border-color: #acd5a5; background: linear-gradient(145deg, #fff, #f2faef); }
+.habitTop { display: grid; grid-template-columns: 40px 1fr 28px; gap: 9px; align-items: center; }
+.habitTop > span { display: grid; width: 40px; height: 40px; place-items: center; border-radius: 11px; background: #e8f5e5; font-size: 21px; }
+.habitTop strong, .habitTop small { display: block; }
+.habitTop small { margin-top: 2px; color: #7d8e84; font-size: 11px; }
+.habitTop > button { width: 28px; height: 28px; border: 0; border-radius: 8px; color: #9a6966; background: transparent; font-size: 18px; }
+.habitBar { height: 7px; margin-top: 13px; overflow: hidden; border-radius: 99px; background: #e8f1e7; }
+.habitBar i { display: block; height: 100%; border-radius: inherit; background: linear-gradient(90deg, #9dd38d, #4c9a52); }
+.targetEdit { display: flex; align-items: center; gap: 5px; margin-top: 11px; color: #71857a; font-size: 11px; }
+.targetEdit input { width: 48px; height: 30px; margin-left: auto; border: 1px solid #cfe0ca; border-radius: 8px; text-align: center; }
+.habitActions { display: grid; grid-template-columns: 1fr 1.2fr; gap: 7px; margin-top: 11px; }
+.habitActions button { min-height: 39px; border: 1px solid #bdd9b7; border-radius: 9px; color: #367b41; background: #f7fbf5; font-weight: 700; }
+.habitActions button:last-child { color: #fff; border-color: #4c9a52; background: #4c9a52; }
+.habitActions button:disabled { opacity: .45; }
